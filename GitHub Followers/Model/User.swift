@@ -8,7 +8,7 @@
 import Foundation
 
 struct User: Codable {
-    var login : String
+    var login: String
     var avatarUrl: String
     var name: String?
     var location: String?
@@ -17,6 +17,6 @@ struct User: Codable {
     var publicGists: Int
     var htmlUrl: String
     var following: Int
-    var follower: Int
+    var followers: Int
     var createdAt: String
 }
