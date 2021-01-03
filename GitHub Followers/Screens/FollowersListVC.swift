@@ -43,14 +43,17 @@ class FollowersListVC: UIViewController {
     func configureCollectionView() {
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UIHelper.createThreeColumnFlowLayout(in: view))
         view.addSubview(collectionView)
+        collectionView.delegate = self
         collectionView.backgroundColor = .systemBackground
         collectionView.register(FollowerCell.self, forCellWithReuseIdentifier: FollowerCell.reuseID)
     }
     
     
     func getFollowers() {
+        showLoadingView()
         NetworkManager.shared.getFollowers(for: username, page: 1) { [weak self] result in
             guard let self = self else {return}
+            self.dismissLoadingView()
             
             switch result {
             case .success(let followers):
@@ -79,6 +82,18 @@ class FollowersListVC: UIViewController {
         snapshot.appendItems(followers)
         DispatchQueue.main.async {
             self.dataSource.apply(snapshot, animatingDifferences: true)
+        }
+    }
+}
+
+extension FollowersListVC: UICollectionViewDelegate {
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        let offsetY             = scrollView.contentOffset.y
+        let contentHeight       = scrollView.contentSize.height
+        let height              = scrollView.frame.size.height
+        
+        if offsetY > contentHeight - height {
+            getFollowers()
         }
     }
 }
