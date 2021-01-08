@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1D5CEF2A25A7E7BC00249F8E /* GFEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5CEF2925A7E7BC00249F8E /* GFEmptyStateView.swift */; };
+		1D5CEF2E25A8C8B600249F8E /* UserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5CEF2D25A8C8B600249F8E /* UserInfoVC.swift */; };
 		B9829E49259C2C61003E87FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9829E48259C2C61003E87FD /* AppDelegate.swift */; };
 		B9829E4B259C2C61003E87FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9829E4A259C2C61003E87FD /* SceneDelegate.swift */; };
 		B9829E52259C2C61003E87FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9829E51259C2C61003E87FD /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		1D5CEF2925A7E7BC00249F8E /* GFEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFEmptyStateView.swift; sourceTree = "<group>"; };
+		1D5CEF2D25A8C8B600249F8E /* UserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoVC.swift; sourceTree = "<group>"; };
 		B9829E45259C2C61003E87FD /* GitHub Followers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitHub Followers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9829E48259C2C61003E87FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9829E4A259C2C61003E87FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				B9829E60259C2D4A003E87FD /* SearchVC.swift */,
 				B9902D55259D7A37001C7E77 /* FollowersListVC.swift */,
 				B9829E63259C2D90003E87FD /* FavoritesListVC.swift */,
+				1D5CEF2D25A8C8B600249F8E /* UserInfoVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				B9902D86259FBC77001C7E77 /* FollowerCell.swift in Sources */,
 				B9902D8A259FBD52001C7E77 /* GFAvatarImageView.swift in Sources */,
 				B9902D72259EBB1D001C7E77 /* User.swift in Sources */,
+				1D5CEF2E25A8C8B600249F8E /* UserInfoVC.swift in Sources */,
 				B9902D5C259E68C0001C7E77 /* GFBodyLabel.swift in Sources */,
 				B9902D59259E669C001C7E77 /* GFTitleLabel.swift in Sources */,
 				B9902D62259E6D14001C7E77 /* GFContainerView.swift in Sources */,
