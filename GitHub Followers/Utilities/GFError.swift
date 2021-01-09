@@ -1,8 +1,8 @@
 //
-//  ErrorMessage.swift
+//  GFError.swift
 //  GitHub Followers
 //
-//  Created by Julian Martinez on 1/1/21.
+//  Created by Julian Martinez on 1/8/21.
 //
 
 import Foundation
